@@ -1,0 +1,25 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://nqi.gmcc.net:20443/nexus/repository/maven-public/"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0'
+    }
+}
+
+repositories{
+    maven {
+        url "https://nqi.gmcc.net:20443/nexus/repository/maven-public/"
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+}
+
+android {
+
+}
