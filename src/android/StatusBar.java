@@ -22,12 +22,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 
-import com.chinamobile.gdwy.MainActivity;
-import com.chinamobile.gdwy.R;
-import com.readystatesoftware.systembartint.SystemBarTintManager;
-
 import org.apache.cordova.CallbackContext;
-import org.apache.cordova.CordovaActivity;
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
@@ -299,10 +294,6 @@ public class StatusBar extends CordovaPlugin {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                 setTranslucentStatus(window,true);
             }
-            //状态栏背景着色
-            /*SystemBarTintManager tintManager = new SystemBarTintManager(activity);
-            tintManager.setStatusBarTintEnabled(true);
-            tintManager.setStatusBarTintResource(R.drawable.shape_statusbar);*/
 
             //去除灰色遮罩
             //Android5.0以上
