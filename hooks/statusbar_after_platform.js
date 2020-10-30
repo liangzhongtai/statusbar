@@ -40,7 +40,7 @@ module.exports = function (ctx) {
         //如果是android平台
         if (fs.existsSync(appGradle)) {
             const data = fs.readFileSync(manifestXml, 'utf8');
-            if (data.indexOf("@style/BaseTheme") == -1) {
+            if (data.indexOf("@style/AppTheme") == -1) {
                 console.log("--------------修改MainActivity");
                 //修改mainActivity
                 replace_string_in_file(fs,mainActivity,
@@ -49,7 +49,7 @@ module.exports = function (ctx) {
                 //修改manifest
                 replace_string_in_file(fs,manifestXml,
                 '<application ',
-                '<application android:theme=\"@style/BaseTheme\" ');
+                '<application android:theme=\"@style/AppTheme\" ');
                 console.log("--------------修改MainActivity成功");
             }
 

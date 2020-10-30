@@ -17,7 +17,6 @@ repositories{
 
 dependencies {
     implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
 }
 
 android {
